@@ -4,8 +4,13 @@ import Search from '@/app/ui/dashboard/search/search'
 import Link from 'next/link'
 import Image from 'next/image'
 import Pagination from '@/app/ui/dashboard/pagination/pagination'
+import { fetchUsers } from '@/app/lib/data'
 
-const UsersPage = ({ placeholder }) => {
+const UsersPage = async () => {
+
+  const users = await fetchUsers();
+  console.log(users)
+
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -48,7 +53,7 @@ const UsersPage = ({ placeholder }) => {
             <td>
               <div className={styles.buttons}>
 
-                <Link href='/'>
+                <Link href='/dashboard/users/test'>
                   <button className={`${styles.button} ${styles.view}`}> View</button>
 
                 </Link>

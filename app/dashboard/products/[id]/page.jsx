@@ -18,25 +18,21 @@ const SingleUserPage = () => {
                     <label>Username</label>
                     <input type="text" name='username' placeholder='John Doe' />
                     <label>Email</label>
-                    <input type="email" name='email' placeholder='John Doe' />
-                    <label>Password</label>
-                    <input type="password" name='password'  />
-                    <label>Phone</label>
-                    <input type="text" name='phone' placeholder='John Doe' />
-                    <label>Address</label>
-                    <textarea type="text" name='username' placeholder='John Doe'>
-
+                    <input type="number" name='price' placeholder='John Doe' />
+                    <label>Stock</label>
+                    <input type="number" name='stock'  />
+                    <label>Color</label>
+                    <input type="text" name='color' placeholder='Red' />
+                    <label>Size</label>
+                    <textarea type="text" name='size' placeholder='John Doe'>
                     </textarea>
-                    <label>is Admin?</label>
-                    <select name="isAdmin" id="isAdmin">
-                        <option value={true}>Yes</option>
-                        <option value={false}>No</option>
+                    <label>Cat</label>
+                    <select name="cat" id="cat">
+                        <option value='kitchen'>Kitchen</option>
+                        <option value='computers'>Computer</option>
                     </select>
-                    <label>Address</label>
-                    <select name="isActive" id="isActive">
-                        <option value={true}>Yes</option>
-                        <option value={false}>No</option>
-                    </select>
+                    <label>Description</label>
+                   <textarea name="" placeholder='description' id="" cols="30" rows="10"></textarea>
                     <button>Update</button>
                 </form>
             </div>
